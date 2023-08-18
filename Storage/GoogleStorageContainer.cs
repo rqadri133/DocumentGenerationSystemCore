@@ -13,10 +13,11 @@
             public string Url { get; set; }
             public string ContaninerName { get; set; }
 
-            public string ContaninerType { get;  set;}   
+           
             public string ContaninerTypeDescription { get; set; }
+        ConnectorStorgeType IStorageContainerHolder<ConnectorInfo>.ContaninerType { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-            public bool ConnectToContainer(string endpoint , ConnectorInfo model)
+        public bool ConnectToContainer(string endpoint , ConnectorInfo model)
             {
               /// <summary>
               /// 

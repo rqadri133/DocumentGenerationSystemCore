@@ -15,7 +15,7 @@
         public string Url { get; set; }
         public string ContaninerName { get; set; }
 
-        public string ContaninerType { get;  set;}   
+        public ConnectorStorgeType ContaninerType { get;  set;}   
         public string ContaninerTypeDescription { get; set; }
 
         public bool ConnectToContainer(string endpoint , T model);

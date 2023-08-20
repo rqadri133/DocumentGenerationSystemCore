@@ -4,23 +4,22 @@
         using System.Linq;
         using System.Runtime.CompilerServices;
         using DGS.Translators;
-        using Google.Cloud.Storage;
+        using Microsoft.Azure.Storage.Blob;
+        using Microsoft.Azure.Storage;
+        
+
         using DGS.Content.Translations;
 
         namespace DGS.StorageContainers
         {
-        public class GoogleContianerManager : IStorageContainerHolder<ConnectorInfo>
+        public class AzureBlobStorageContainer : IStorageContainerHolder<ConnectorInfo>
         {  
-            private readonly IConfiguration configuration = null;
-            
-            public GoogleContianerManager(IConfiguration _configuration) {
-                configuration = _configuration;
-            }
             public string Url { get; set; }
             public string ContaninerName { get; set; }
 
            
             public string ContaninerTypeDescription { get; set; }
+     
         public bool ConnectToContainer(string endpoint , ConnectorInfo model)
             {
               /// <summary>

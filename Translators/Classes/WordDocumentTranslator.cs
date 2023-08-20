@@ -18,7 +18,7 @@ namespace DocumentGenerationSystemCore.Page.Translator
 
         public DocumentContent TranslateDocument(DocumentContent content, ConnectorInfo connectionInfo)
         {
-            switch(storageContainerHolderRef.ContaninerType)
+            switch(connectionInfo.ConnectorStorgeType)
             {
                case ConnectorStorgeType.GoogleFirebaseStorage :
                 break;

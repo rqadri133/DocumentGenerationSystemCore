@@ -19,8 +19,7 @@
             public string Url { get; set; }
             public string ContaninerName { get; set; }
 
-           
-            public string ContaninerTypeDescription { get; set; }
+        public string ContaninerTypeDescription { get; set; }
         public bool ConnectToContainer(string endpoint , ConnectorInfo model)
             {
               /// <summary>
